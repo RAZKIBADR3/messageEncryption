@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Crepter Msg</title>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <form>
+                    <div class="title"><h1>crepter votre message</h1></div>
+                    <div class="body">
+                        <div class="input_parent">
+                            <textarea type="text" id="inputCre"></textarea>
+                            <input type="text" placeholder="clé" id="cleCre">
+                        </div>
+                        <div class="traitement">
+                            <div class="progress">
+                                <span class="progress_bar">
+                                    <span></span>
+                                </span>
+                                <span class="progress_number">0%</span>
+                            </div>
+                            <div class="btn">
+                                <input type="button" onclick="crepter()" id="Crepter" value="Crepter">
+                            </div>
+                        </div>
+                        <div class="output_parent">
+                            <textarea type="text" id="outputCre"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div>
+                <form>
+                    <div class="title"><h1>decrepter votre message</h1></div>
+                    <div class="body">
+                        <div class="input_parent">
+                            <textarea id="inputDec"></textarea>
+                            <input type="text" placeholder="clé" id="cleDec">
+                        </div>
+                        <div class="traitement">
+                            <div class="progress">
+                                <span class="progress_bar">
+                                    <span></span>
+                                </span>
+                                <span class="progress_number">0%</span>
+                            </div>
+                            <div class="btn">
+                                <input type="button" onclick="decrepter()" id="Decrepter" value="Decrepter">
+                            </div>
+                        </div>
+                        <div class="output_parent">
+                            <textarea type="text" id="outputDec"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
